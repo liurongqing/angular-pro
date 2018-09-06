@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-pro';
+  title = 'Angular 6.x了啊，更新真快，可以突然放弃啊。';
 }
