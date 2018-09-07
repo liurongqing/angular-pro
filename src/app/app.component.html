@@ -1,9 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        Welcome to {{ title }}!
-    </h1>
-</div>
-<h2>Here are some links to help you start: </h2>
-
-<app-heroes></app-heroes>
+<mat-grid-list cols="10" rowHeight="64px">
+    <mat-grid-tile colspan="10" style.background="lightblue">头部导航</mat-grid-tile>
+    <!-- <mat-grid-tile 
+        *ngFor="let tile of tiles" 
+        [colspan]="tile.cols" 
+        [rowspan]="tile.rows" 
+        [style.background]="tile.color">
+        {{tile.text}}
+    </mat-grid-tile> -->
+</mat-grid-list>
+<!-- <router-outlet></router-outlet> -->
