@@ -44,7 +44,6 @@ nav {
 
 #app .nav-item {
     height: 36px;
-    text-indent: 20px;
     font-size: 14px;
     margin: 0 -16px;
     color: rgba(0,0,0,.7);
@@ -54,6 +53,7 @@ nav {
 .nav-item a{
     height: 36px;
     line-height: 36px;
+    text-indent: 36px;
 }
 
 .nav-item.active a{
