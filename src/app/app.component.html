@@ -33,14 +33,14 @@
         <nav>
             <mat-nav-list>
                 <h3 matSubheader>用户管理</h3>
-                <mat-list-item class="nav-item">
+                <mat-list-item [ngClass]="{'nav-item': true, 'active': currentUrl === '/users'}">
                     <a matLine routerLink="/users">用户列表</a>
                 </mat-list-item>
 
                 <mat-divider></mat-divider>
 
                 <h3 matSubheader>权限管理</h3>
-                <mat-list-item class="nav-item">
+                <mat-list-item  [ngClass]="{'nav-item': true, 'active': currentUrl === '/auths'}">
                     <a matLine routerLink="/auths">权限列表</a>
                 </mat-list-item>
             </mat-nav-list>

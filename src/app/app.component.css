@@ -44,10 +44,22 @@ nav {
 
 #app .nav-item {
     height: 36px;
-    /* padding-left: 20px; */
     text-indent: 20px;
     font-size: 14px;
+    margin: 0 -16px;
     color: rgba(0,0,0,.7);
+    
+}
+
+.nav-item a{
+    height: 36px;
+    line-height: 36px;
+}
+
+.nav-item.active a{
+    box-sizing: border-box;
+    background: rgba(63, 81, 181, .1);
+    border-right: 3px solid rgb(63, 81, 181);
 }
 
 section {
