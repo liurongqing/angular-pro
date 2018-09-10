@@ -1,40 +1,52 @@
 <div id="app">
-    <header>头部</header>
+    <header>
+        <div class="logo">
+            <mat-icon>cloud_circle</mat-icon>
+            <span>后台管理系统</span>
+        </div>
+        <div class="setting">
+            <span>欢迎您，刘先生</span>
+
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>dialpad</mat-icon>
+                    <span>哈哈</span>
+                </button>
+                <button mat-menu-item disabled>
+                    <mat-icon>voicemail</mat-icon>
+                    <span>呵呵</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>notifications_off</mat-icon>
+                    <span>呼呼</span>
+                </button>
+            </mat-menu>
+
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon matBadge="15" matBadgeColor="warn">person</mat-icon>
+            </button>
+
+
+        </div>
+    </header>
     <div class="container">
         <nav>
             <mat-nav-list>
                 <h3 matSubheader>用户管理</h3>
                 <mat-list-item class="nav-item">
-                    <a matLine href="/">用户列表</a>
-                </mat-list-item>
-                <mat-list-item class="nav-item">
-                    <a matLine href="/">添加用户</a>
+                    <a matLine routerLink="/users">用户列表</a>
                 </mat-list-item>
 
                 <mat-divider></mat-divider>
 
                 <h3 matSubheader>权限管理</h3>
                 <mat-list-item class="nav-item">
-                    <a matLine href="/">权限列表</a>
+                    <a matLine routerLink="/auths">权限列表</a>
                 </mat-list-item>
-                <mat-list-item class="nav-item">
-                    <a matLine href="/">添加权限</a>
-                </mat-list-item>
-
-                <mat-divider></mat-divider>
-
-                <h3 matSubheader>资源管理</h3>
-                <mat-list-item class="nav-item">
-                    <a matLine href="/">资源列表</a>
-                </mat-list-item>
-                <mat-list-item class="nav-item">
-                    <a matLine href="/">资源权限</a>
-                </mat-list-item>
-
             </mat-nav-list>
         </nav>
         <section>
-            内容
+            <router-outlet></router-outlet>
         </section>
     </div>
 </div>
