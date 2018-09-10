@@ -40,6 +40,7 @@ nav{
 nav {
     width: 200px;
     background: rgba(0,0,0,.03);
+    box-shadow: inset -4px 0 3px -3px #eee;
 }
 
 #app .nav-item {
